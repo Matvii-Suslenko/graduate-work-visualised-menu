@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e4c9d87739047af8e4754c5fccdffc7, type: 3}
+  m_Name: 7up
+  m_EditorClassIdentifier: 
+  _name:
+    _ukrainianName: "7up (330\u043C\u043B)"
+    _englishName: 7up (330ml)
+  _description:
+    _ukrainianName: 
+    _englishName: 
+  _price: 30
+  _calories: 36

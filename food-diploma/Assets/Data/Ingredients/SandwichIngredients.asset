@@ -1,0 +1,285 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6635e59c777406da6be2a0e774d7e4a, type: 3}
+  m_Name: SandwichIngredients
+  m_EditorClassIdentifier: 
+  _sandwichIngredients:
+  - _ingredientAsset: {fileID: 948647545145056930, guid: 30890dd53afa94b70973700fdabac975, type: 3}
+    _ingredientSprite: {fileID: 21300000, guid: 9653acf33364148f492ff8775b5f5fc9, type: 3}
+    _name:
+      _ukrainianName: "\u0412\u0430\u0444\u043B\u044F"
+      _englishName: Waffle
+    _calories: 5
+    _weight: 20
+    _price: 10
+    _height: 0.01
+  - _ingredientAsset: {fileID: 7165270738116063290, guid: 47190fed6f9a44a71b93b0cbd018bbb2, type: 3}
+    _ingredientSprite: {fileID: 21300000, guid: bbadb80ce18ab4c3b92b9c350a5ff1a7, type: 3}
+    _name:
+      _ukrainianName: "\u0425\u043B\u0456\u0431"
+      _englishName: Bread
+    _calories: 5
+    _weight: 20
+    _price: 10
+    _height: 0.01
+  - _ingredientAsset: {fileID: 1613628372599174992, guid: 7022e0be5b4614fae9d1ed930ffcb8dd, type: 3}
+    _ingredientSprite: {fileID: 21300000, guid: e4c9cda00e901418eb168ce2771cefe4, type: 3}
+    _name:
+      _ukrainianName: "\u0421\u0438\u0440"
+      _englishName: Cheese
+    _calories: 5
+    _weight: 20
+    _price: 10
+    _height: 0.01
+  - _ingredientAsset: {fileID: 2242106979545585065, guid: 9a344ac06e333482dbdc1e8a12137550, type: 3}
+    _ingredientSprite: {fileID: 21300000, guid: 555610417093e47ff992fe787f2099ed, type: 3}
+    _name:
+      _ukrainianName: "\u041E\u0433\u0456\u0440\u043E\u043A"
+      _englishName: Cucumber
+    _calories: 5
+    _weight: 20
+    _price: 10
+    _height: 0.01
+  - _ingredientAsset: {fileID: 23106457768262191, guid: 8c8c152db03234e3e853c0c558c0a4b6, type: 3}
+    _ingredientSprite: {fileID: 21300000, guid: 9abe404f449414d7e85f9433fc173a4e, type: 3}
+    _name:
+      _ukrainianName: "\u0421\u043E\u0443\u0441 BBQ"
+      _englishName: Sauce BBQ
+    _calories: 5
+    _weight: 20
+    _price: 10
+    _height: 0.01
+  - _ingredientAsset: {fileID: 2115300075916185788, guid: 98c974238eb4943d79f912be2c9a6f4f, type: 3}
+    _ingredientSprite: {fileID: 21300000, guid: 4580e40e5bfd141489118a02fb0c051b, type: 3}
+    _name:
+      _ukrainianName: "\u0421\u0430\u043B\u0430\u0442"
+      _englishName: Lettuce
+    _calories: 5
+    _weight: 20
+    _price: 10
+    _height: 0.01
+  - _ingredientAsset: {fileID: 5009900325680520336, guid: 6112f344da2a846a896e617e76d61d6d, type: 3}
+    _ingredientSprite: {fileID: 21300000, guid: 464736e16ee8e4b16b7e5428edfda4c3, type: 3}
+    _name:
+      _ukrainianName: "\u0427\u043E\u0440\u043D\u0456 \u043E\u043B\u0438\u0432\u043A\u0438"
+      _englishName: Black olives
+    _calories: 5
+    _weight: 20
+    _price: 10
+    _height: 0.01
+  - _ingredientAsset: {fileID: 4366013831440162870, guid: 256a5020f380f45c89b14689b6fd755a, type: 3}
+    _ingredientSprite: {fileID: 21300000, guid: 4bb5e84ebe6f74a5fa02855995014a0c, type: 3}
+    _name:
+      _ukrainianName: "\u041B\u043E\u0441\u043E\u0441\u044C"
+      _englishName: Salmon
+    _calories: 5
+    _weight: 20
+    _price: 10
+    _height: 0.01
+  - _ingredientAsset: {fileID: 3400432366375220012, guid: e0f23e8a45da94e67a061a9ab968b3be, type: 3}
+    _ingredientSprite: {fileID: 21300000, guid: a95a7c67cc8ed4c2dbe316201ec2db87, type: 3}
+    _name:
+      _ukrainianName: "\u041F\u0435\u0440\u0435\u0446\u044C"
+      _englishName: Pepper
+    _calories: 5
+    _weight: 20
+    _price: 10
+    _height: 0.01
+  - _ingredientAsset: {fileID: 8743358411115572461, guid: f638dcfd57ad646a09ad99e722dde5d2, type: 3}
+    _ingredientSprite: {fileID: 21300000, guid: 0213c5185b13c4fa6a2e72e9691187fb, type: 3}
+    _name:
+      _ukrainianName: "\u0410\u043D\u0447\u043E\u0443\u0441\u0438"
+      _englishName: Anchovies
+    _calories: 5
+    _weight: 20
+    _price: 10
+    _height: 0.01
+  - _ingredientAsset: {fileID: 6622215151520081768, guid: 02850573fc824430da8e6537281e3477, type: 3}
+    _ingredientSprite: {fileID: 21300000, guid: eaa0b433d1b5c4bd3b0464856e6d2a64, type: 3}
+    _name:
+      _ukrainianName: "\u041C\u0430\u0441\u043B\u043E"
+      _englishName: Butter
+    _calories: 5
+    _weight: 20
+    _price: 10
+    _height: 0.01
+  - _ingredientAsset: {fileID: 7299860500051588489, guid: 6853dfa3107cd40398b8108f517e6824, type: 3}
+    _ingredientSprite: {fileID: 21300000, guid: f5f17faa632d946dfa0d2b183f3380ec, type: 3}
+    _name:
+      _ukrainianName: "\u041A\u0440\u0435\u0432\u0435\u0442\u043A\u0438"
+      _englishName: Shrimps
+    _calories: 5
+    _weight: 20
+    _price: 10
+    _height: 0.01
+  - _ingredientAsset: {fileID: 9164574790362328873, guid: 4d9721fbb166b467bb71c6c9d1283d68, type: 3}
+    _ingredientSprite: {fileID: 21300000, guid: b5c00663e6fe5494c892e2aa99a99304, type: 3}
+    _name:
+      _ukrainianName: "\u041A\u0443\u0440\u043A\u0430"
+      _englishName: Chicken
+    _calories: 5
+    _weight: 20
+    _price: 10
+    _height: 0.01
+  - _ingredientAsset: {fileID: 122752410071580028, guid: ed73f834816ce40f6baf190bac6ed917, type: 3}
+    _ingredientSprite: {fileID: 21300000, guid: aa3585afbe71b4dd4a7500eba5353fef, type: 3}
+    _name:
+      _ukrainianName: "\u041A\u0443\u0440\u044F\u0447\u0435 \u044F\u0439\u0446\u0435"
+      _englishName: Chicken egg
+    _calories: 5
+    _weight: 20
+    _price: 10
+    _height: 0.01
+  - _ingredientAsset: {fileID: 1796336653194728589, guid: 0be032b0403274a279090ecedab9dd90, type: 3}
+    _ingredientSprite: {fileID: 21300000, guid: 1cac4c1617dcb47c5a64b5d7ffd31dee, type: 3}
+    _name:
+      _ukrainianName: "\u041A\u0430\u0440\u0442\u043E\u043F\u043B\u044F \u0444\u0440\u0456"
+      _englishName: Fries
+    _calories: 5
+    _weight: 20
+    _price: 10
+    _height: 0.01
+  - _ingredientAsset: {fileID: 3847991605239601769, guid: f2928159378e54d86be723b1050ff016, type: 3}
+    _ingredientSprite: {fileID: 21300000, guid: f1c8f98b2c62e4b88b0e739b8bb3906b, type: 3}
+    _name:
+      _ukrainianName: "\u0417\u0435\u043B\u0435\u043D\u0456 \u043E\u043B\u0456\u0432\u043A\u0438"
+      _englishName: Green olives
+    _calories: 5
+    _weight: 20
+    _price: 10
+    _height: 0.01
+  - _ingredientAsset: {fileID: 8320257916338886022, guid: ac07ff0760aa142d0a77c3d20107ab8a, type: 3}
+    _ingredientSprite: {fileID: 21300000, guid: 435adc5d155fa43da97e8d20c6ab22cd, type: 3}
+    _name:
+      _ukrainianName: "\u0421\u0438\u0440 \u0445\u0430\u043B\u0443\u043C\u0456"
+      _englishName: Halloumi
+    _calories: 5
+    _weight: 20
+    _price: 10
+    _height: 0.01
+  - _ingredientAsset: {fileID: 8289608496843583831, guid: 7c55d99ed40364e5bb151e015af531f7, type: 3}
+    _ingredientSprite: {fileID: 21300000, guid: f822c96575bf54dad96f4372022ffc40, type: 3}
+    _name:
+      _ukrainianName: "\u0428\u0438\u043D\u043A\u0430"
+      _englishName: Ham
+    _calories: 5
+    _weight: 20
+    _price: 10
+    _height: 0.01
+  - _ingredientAsset: {fileID: 1701202522234505064, guid: 6a25eb5b36ec3409e8ca9387371cbae5, type: 3}
+    _ingredientSprite: {fileID: 21300000, guid: b51e8bf3ca17c4a9eb234289e4e819a4, type: 3}
+    _name:
+      _ukrainianName: "\u041A\u0435\u0442\u0447\u0443\u043F"
+      _englishName: Ketchup
+    _calories: 5
+    _weight: 20
+    _price: 10
+    _height: 0.01
+  - _ingredientAsset: {fileID: 375696995035799489, guid: 4f06e25f46b044ed7a4e3dc2b9269719, type: 3}
+    _ingredientSprite: {fileID: 21300000, guid: 374a57dc0c7db445ba2eb1b017d23897, type: 3}
+    _name:
+      _ukrainianName: "\u041C\u0430\u0439\u043E\u043D\u0435\u0437"
+      _englishName: Mayo
+    _calories: 5
+    _weight: 20
+    _price: 10
+    _height: 0.01
+  - _ingredientAsset: {fileID: 486754073931935446, guid: aa0c066638679407babb2bdd3f472a0a, type: 3}
+    _ingredientSprite: {fileID: 21300000, guid: 604400ff260b348deb6050552dd84990, type: 3}
+    _name:
+      _ukrainianName: "\u0413\u0440\u0438\u0431\u0438"
+      _englishName: Mushrooms
+    _calories: 5
+    _weight: 20
+    _price: 10
+    _height: 0.01
+  - _ingredientAsset: {fileID: 3987639115525234904, guid: 71a045ee69ae0490e888ed24b48a3264, type: 3}
+    _ingredientSprite: {fileID: 21300000, guid: 4ce2eb55f5c3744cd9deda6cc89b1efa, type: 3}
+    _name:
+      _ukrainianName: "\u0413\u0456\u0440\u0447\u0438\u0446\u044F"
+      _englishName: Mustard
+    _calories: 5
+    _weight: 20
+    _price: 10
+    _height: 0.01
+  - _ingredientAsset: {fileID: 8079640898796637681, guid: f9c69373c37314222b12995e90bcce75, type: 3}
+    _ingredientSprite: {fileID: 21300000, guid: 86569dfdf6a564975a62d702e010f37b, type: 3}
+    _name:
+      _ukrainianName: "\u0426\u0438\u0431\u0443\u043B\u044F"
+      _englishName: Onion
+    _calories: 5
+    _weight: 20
+    _price: 10
+    _height: 0.01
+  - _ingredientAsset: {fileID: 5751106568299295868, guid: 43db2ea6344784028a58e90f97f86be9, type: 3}
+    _ingredientSprite: {fileID: 21300000, guid: cb46b4b11ad164ef48a163ac54f345da, type: 3}
+    _name:
+      _ukrainianName: "\u041A\u043E\u0442\u043B\u0435\u0442\u043A\u0430"
+      _englishName: Patty
+    _calories: 5
+    _weight: 20
+    _price: 10
+    _height: 0.01
+  - _ingredientAsset: {fileID: 5570317162128008842, guid: 81d13cd16ab1e454f93a69cac7ce93e9, type: 3}
+    _ingredientSprite: {fileID: 21300000, guid: 06f3c4c23aa8749e6929f86d82edcfbc, type: 3}
+    _name:
+      _ukrainianName: "\u0421\u043E\u043B\u043E\u043D\u0456 \u043E\u0433\u0456\u0440\u043A\u0438"
+      _englishName: Pickles
+    _calories: 5
+    _weight: 20
+    _price: 10
+    _height: 0.01
+  - _ingredientAsset: {fileID: 6732568037678051264, guid: 5de6aefbb5f724dac974b9c7dccbfca6, type: 3}
+    _ingredientSprite: {fileID: 21300000, guid: 6824f5884675d421986e22889a28a24a, type: 3}
+    _name:
+      _ukrainianName: "\u0410\u043D\u0430\u043D\u0430\u0441"
+      _englishName: Pineapple
+    _calories: 5
+    _weight: 20
+    _price: 10
+    _height: 0.01
+  - _ingredientAsset: {fileID: 305279453967627550, guid: 8bb50b45f031b41f4a94878ee9a30842, type: 3}
+    _ingredientSprite: {fileID: 21300000, guid: f8451d3ac32db40d2a0081eaabaa4f48, type: 3}
+    _name:
+      _ukrainianName: "\u041F\u0435\u0447\u0435\u043D\u044F"
+      _englishName: Roast
+    _calories: 5
+    _weight: 20
+    _price: 10
+    _height: 0.01
+  - _ingredientAsset: {fileID: 4837644420665672059, guid: 8f93136cdf63a4d7686bdd2feadb16a6, type: 3}
+    _ingredientSprite: {fileID: 21300000, guid: aa8f1a2668c3448f48daa6c1d993ccc8, type: 3}
+    _name:
+      _ukrainianName: "\u0421\u0430\u043B\u044F\u043C\u0456"
+      _englishName: Salami
+    _calories: 5
+    _weight: 20
+    _price: 10
+    _height: 0.01
+  - _ingredientAsset: {fileID: 2442096486993846173, guid: a6d89771bba5941db99c258f55456ed7, type: 3}
+    _ingredientSprite: {fileID: 21300000, guid: 5a9cb0faee03147179dc3188af501d22, type: 3}
+    _name:
+      _ukrainianName: "\u0421\u043E\u0441\u0438\u0441\u043A\u0430"
+      _englishName: Sausage
+    _calories: 5
+    _weight: 20
+    _price: 10
+    _height: 0.01
+  - _ingredientAsset: {fileID: 661936959230173176, guid: 890dee3ecc6cf4d3389ce9e4943a22ad, type: 3}
+    _ingredientSprite: {fileID: 21300000, guid: 053620b7499344273971ecd2fe9c8ddd, type: 3}
+    _name:
+      _ukrainianName: "\u041F\u043E\u043C\u0456\u0434\u043E\u0440"
+      _englishName: Tomato
+    _calories: 5
+    _weight: 20
+    _price: 10
+    _height: 0.01
