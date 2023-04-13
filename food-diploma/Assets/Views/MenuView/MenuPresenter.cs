@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using Localisation.Models;
 using Localisation;
 using Views.MenuView;
@@ -28,6 +29,7 @@ namespace Views.StartScreenView
 
         private void OnFinishOrderClicked()
         {
+            var task = _orderModel.SendOrder();
             _viewManager.OpenView(ViewName.FinishScreen);
         }
 

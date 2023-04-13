@@ -72,7 +72,8 @@ namespace Views.SandwichConstructorView
             newDishBehaviour.SetCustomDishInfo(new CustomDishInfo(
                     new TranslatableName("Зібрана вами", "Made by you"),
                     new TranslatableName("Канапка", "Sandwich"),
-                    _sandwichModel.GetTotalCalories(),_sandwichModel.GetTotalPrice()));
+                    _sandwichModel.GetTotalCalories(),_sandwichModel.GetTotalPrice(),
+                    _sandwichModel.GetAllIngredientNames()));
 
             var newSandwichAxis = newSandwichObject.transform.Find("Asset Axis");
             Instantiate(_sandwichModel.SandwichObjectRoot, newSandwichAxis);

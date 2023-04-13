@@ -5,6 +5,8 @@ namespace Data
     [CreateAssetMenu(fileName = "DishInfo", menuName = "ScriptableObjects/DishInfo", order = 1)]
     public class DishInfo : ScriptableObject, IDishInfo
     {
+        public string[] Ingredients => new string[] { };
+        
         public TranslatableName Description => _description;
         public TranslatableName Name => _name;
         public float Calories => _calories;

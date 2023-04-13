@@ -63,5 +63,10 @@ namespace Models
             _ingredients.Clear();
             SandwichCleared?.Invoke();
         }
+
+        public string[] GetAllIngredientNames()
+        {
+            return _ingredients.Select(i => i.Value.Name._englishName).ToArray();
+        }
     }
 }
