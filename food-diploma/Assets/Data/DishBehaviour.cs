@@ -10,7 +10,7 @@ namespace Data
     {
         public event Action<DishBehaviour> DishSelected;
         public event Action<DishBehaviour> DishCanceled;
-        public DishInfo DishInfo => _dishInfo;
+        public IDishInfo DishInfo => _customDishInfo != null ? (IDishInfo)_customDishInfo :_dishInfo;
 
         [SerializeField]
         private Button _chooseDishButton;
@@ -24,6 +24,8 @@ namespace Data
         [SerializeField]
         private DishInfo _dishInfo;
         
+        private CustomDishInfo _customDishInfo;
+        
         private void Awake()
         {
             _chooseDishButton.onClick.AddListener(OnChooseButtonClicked);
@@ -33,12 +35,18 @@ namespace Data
             LocalisationModel.LanguageSelected += OnLanguageSelected;
         }
 
+        public void SetCustomDishInfo(CustomDishInfo customDishInfo)
+        {
+            _customDishInfo = customDishInfo;
+            OnLanguageSelected(LocalisationModel.CurrentLanguage);
+        }
+
         private void OnLanguageSelected(Language language)
         {
             var description = language switch
             {
-                Language.Ukrainian => DishInfo.Name._ukrainianName,
-                Language.English => DishInfo.Name._englishName,
+                Language.Ukrainian => DishInfo.Name != null ? DishInfo.Name._ukrainianName : string.Empty,
+                Language.English => DishInfo.Name != null ? DishInfo.Name._englishName : string.Empty,
                 _ => string.Empty
             };
 

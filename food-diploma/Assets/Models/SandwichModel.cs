@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Data.Ingredients;
+using UnityEngine;
 using System.Linq;
 using System;
 
@@ -11,7 +12,10 @@ namespace Models
         public event Action LastIngredientRemoved;
         public event Action SandwichCleared;
 
-        private readonly List<KeyValuePair<int, SandwichIngredient>> _ingredients = new List<KeyValuePair<int, SandwichIngredient>>();
+        public Transform SandwichObjectRoot => _sandwichObjectRoot;
+        [SerializeField] private Transform _sandwichObjectRoot;
+
+            private readonly List<KeyValuePair<int, SandwichIngredient>> _ingredients = new List<KeyValuePair<int, SandwichIngredient>>();
 
         public float GetTotalCalories()
         {

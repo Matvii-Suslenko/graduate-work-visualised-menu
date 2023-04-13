@@ -13,7 +13,7 @@ namespace Models
         public event Action<int> PriceChanged;
         public int CurrentPrice => _price;
 
-        private Dictionary<int, DishInfo> _dishes = new Dictionary<int, DishInfo>();
+        private Dictionary<int, IDishInfo> _dishes = new Dictionary<int, IDishInfo>();
         
         private int _lastIndex = 0;
         private int _price = 0;

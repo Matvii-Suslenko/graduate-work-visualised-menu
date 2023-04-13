@@ -1,14 +1,21 @@
 using Data.Ingredients;
 using UnityEngine;
 using Models;
+using Data;
 
 namespace Views.SandwichConstructorView
 {
-    public class  SandwichConstructorPresenter : Presenter<ISandwichConstructorView>
+    public class SandwichConstructorPresenter : Presenter<ISandwichConstructorView>
     {
+        [SerializeField]
+        private OrderModel _orderModel;
+        
         [SerializeField]
         private SandwichModel _sandwichModel;
         
+        [SerializeField]
+        private GameObject _customDishObject;
+
         protected override void Awake()
         {
             base.Awake();
@@ -59,8 +66,27 @@ namespace Views.SandwichConstructorView
 
         private void OnAddSandwichClicked()
         {
+            var newSandwichObject = Instantiate(_customDishObject);
+            
+            var newDishBehaviour = newSandwichObject.GetComponent<DishBehaviour>();
+            newDishBehaviour.SetCustomDishInfo(new CustomDishInfo(
+                    new TranslatableName("Зібрана вами", "Made by you"),
+                    new TranslatableName("Канапка", "Sandwich"),
+                    _sandwichModel.GetTotalCalories(),_sandwichModel.GetTotalPrice()));
+
+            var newSandwichAxis = newSandwichObject.transform.Find("Asset Axis");
+            Instantiate(_sandwichModel.SandwichObjectRoot, newSandwichAxis);
+            
+            var childrenCount = newSandwichAxis.GetChild(0).childCount;
+            for (var i = 0; i < childrenCount; ++i)
+            {
+                newSandwichAxis.GetChild(0).GetChild(i).gameObject.layer = 0;
+            }
+            
+            _orderModel.AddDish(newDishBehaviour);
+            Destroy(newSandwichObject);
+            
             _viewManager.OpenView(ViewName.Menu);
-            throw new System.NotImplementedException();
         }
 
         private void OnCancelSandwichClicked()

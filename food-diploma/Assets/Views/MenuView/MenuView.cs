@@ -32,9 +32,6 @@ namespace Views.MenuView
         private RectTransform _carousalTransform;
 
         [SerializeField]
-        private RectTransform _carousalExtendedTransform;
-
-        [SerializeField]
         private Text _orderPrice;
         
         [SerializeField]
@@ -48,11 +45,18 @@ namespace Views.MenuView
             _cancelOrderButton.onClick.AddListener(OnCancelOrderClicked);
             _addNewDishButton.onClick.AddListener(OnAddNewDishClicked);
             _finishOrderButton.interactable = false;
+            SetUpScroll();
         }
         
         public void AddDish(int dishId, DishBehaviour dish)
         {
             var newDish = Instantiate(dish, _carousalTransform);
+
+            if (dish.DishInfo is CustomDishInfo customDishInfo)
+            {
+                newDish.SetCustomDishInfo(customDishInfo);
+            }
+            
             newDish.SetCancelVisible(true);
             newDish.DishCanceled += (d) => OnCancelDishClicked(d, dishId);
             _dishes.Add(newDish);
